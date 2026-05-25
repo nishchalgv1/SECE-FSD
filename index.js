@@ -55,6 +55,119 @@ nums = {
 };
 console.log(nums);
 
+// Javascript is dynamically typed. 
+// If you have declared a variable of type number
+// you can later reassigned it to some other data
+// type
+
+// Scoping 
+
+// implement all types of functions
+// 1. Function declaration multiply - product of 2 numbers
+// 2. Function expression 
+// 3. Arrow Function
+// 4. Anonymous function
+
+// nishchalgv1 -- github username
+// multiply
+function multiply(a, b){
+    return a * b;
+}
+const ans1 = multiply(2, 3); 
+
+// function expression - assigning a function to a variable
+const multiply1 = function(a, b){
+    return a * b;
+}
+
+const ans2 = multiply1(10, 2);
+
+// arrow function
+const multiply2 = (a, b) => {
+    return a * b;
+}
+const ans3 = multiply2(4, 9);
+console.log(ans1);
+console.log(ans2);
+console.log(ans3);
+
+
+
+function dummy(a, b){
+    a = a + 5;
+    b = b + 10;
+    console.log("Print a and b inside of function");
+
+    console.log(a, b);
+    // return {a, b};
+}
+
+let a = 10, b = 20;
+dummy(a, b);
+// console.log("Print a and b outside of function");
+// console.log(a, b);
+
+// let z = 100;
+// function print(){
+//     let z = 10;
+//     console.log(z); // 10
+// }
+// print();
+// console.log(z); // 100
+
+// variables declared with let has function scope
+var x = 99;
+function print(){
+    //var x = 88;
+    console.log(x); // 
+}
+print();
+console.log(x); // 
+
+
+// an object is a real world entity
+
+// create an object
+// const, var, let
+let student = {
+    name: "Rahul",
+    age: 20,
+    hasGraduated: false,
+    branch: "Computer Science and Engineering"
+}
+
+console.log(student);
+// print the branch name
+console.log(student.branch);
+
+student.name = "Mohan";
+console.log(student.name);
+student = [10, 20, 30];
+console.log("Modified: ", student);
+
+// create one nested object
+// address -- home no, city, street name
+
+const student1 = {
+    name: "Alex",
+    age: 20,
+    hasGraduated: false,
+    branch: "AI and DS",
+    marks: [80, 60, 70, 90],
+    address: {
+        city: "Coimbatore",
+        state: "Tamil Nadu",
+        collegName: "Sri Eshwar College of Engineering",
+        hostelRoomNum: 102,
+        pincode: 131001
+    }
+}
+const cnMarks = student1.marks[2];
+console.log("Computer Network Marks:", cnMarks);
+const collegName = student1.address.collegName;
+console.log("college name is: ", collegName);
+
+
 
 
 
