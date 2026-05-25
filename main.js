@@ -168,6 +168,13 @@ const collegName = student1.address.collegName;
 console.log("college name is: ", collegName);
 
 
+function add(a, b){
+    return a + b;
+}
+
+const output = add(10, "10");
+console.log(output);
+// 1010 or 20  string concatenation 1010
 
 
 
