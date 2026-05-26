@@ -36,3 +36,13 @@ const firstName = "Mohan";
 const lastName = "Kumar";
 const fullName = `${firstName} ${lastName}`;
 console.log(`Welcome ${fullName} to the class.`);
+
+
+// forEach -> to iterate on the array
+// return type -> void
+const fruits = ["Apple", "Orange", "Papaya", "Grapes", 10, 20, 30, false];
+
+// print every element of this array
+fruits.forEach((elem, idx) => {
+    console.log("elem: ", elem, " idx: ", idx);
+})
